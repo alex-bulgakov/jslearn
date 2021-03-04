@@ -8,8 +8,21 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    let a = prompt("Первое число?", 1);
-    let b = prompt("Второе число?", 2);
+    console.log(5 > 4);
+    console.log("ананас" > "яблоко");
+    console.log("2" > "12");
+    console.log(undefined == null);
+    console.log(undefined === null);
+    console.log(null == "\n0\n");
+    console.log(null === +"\n0\n");
 
-    alert(+a + +b); // 12
+    /*
+5 > 4                   true
+"ананас" > "яблоко"     true
+"2" > "12"              false
+undefined == null       true
+undefined === null      false
+null == "\n0\n"         false
+null === +"\n0\n"       false
+     */
 })
