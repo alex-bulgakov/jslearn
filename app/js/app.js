@@ -1,3 +1,4 @@
+2 + 2;
 // // Import jQuery module (npm i jquery)
 // import $ from 'jquery'
 // window.jQuery = $
@@ -8,7 +9,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
-	console.log(2+2);
+    console.log('test js');
 
 })
