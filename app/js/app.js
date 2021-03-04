@@ -8,12 +8,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    let name = "Ilya";
+    let a = prompt("Первое число?", 1);
+    let b = prompt("Второе число?", 2);
 
-    alert(`hello ${1}`); // ?
-
-    alert(`hello ${"name"}`); // ?
-
-    alert(`hello ${name}`); // ?
-
+    alert(+a + +b); // 12
 })
