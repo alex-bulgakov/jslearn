@@ -1,4 +1,3 @@
-2 + 2;
 // // Import jQuery module (npm i jquery)
 // import $ from 'jquery'
 // window.jQuery = $
@@ -9,6 +8,12 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    console.log('test js');
+    let name = "Ilya";
+
+    alert(`hello ${1}`); // ?
+
+    alert(`hello ${"name"}`); // ?
+
+    alert(`hello ${name}`); // ?
 
 })
