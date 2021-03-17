@@ -9,23 +9,22 @@ import debug, {isEmpty} from "./lib";
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    let salaries = {
-        John: 100,
-        Ann: 160,
-        Pete: 130
-    }
-
-    let empty = {}
-
-    let sum = (obj) => {
-        let sum = 0;
+    let multiplyNumeric = (obj) => {
         for (let key in obj) {
-            sum += obj[key];
+            if (typeof obj[key] == "number") {
+                obj[key] *= 2;
+            }
         }
-        return sum;
     }
 
-    debug(sum(salaries));
-    debug(sum(empty));
+    let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+
+    debug(menu);
+    multiplyNumeric(menu);
+    debug(menu);
 
 })
