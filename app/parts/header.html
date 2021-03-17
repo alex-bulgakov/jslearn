@@ -3,18 +3,39 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
 
-	<title><!--#echo var="title" --></title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5">
 
-	<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="css/main.min.css">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <!-- добавим стили mocha для отображения результатов -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.3.1/mocha.css"
+          integrity="sha512-Ytt2foRGKdIInPXwyS3gxRvfTv4n2wi7uB7neCLH1LjExT+PKBeQu6LNVB4QpHaJqx7m2btagBs4kqxYC1QNFg=="
+          crossorigin="anonymous"/>
+    <!-- добавляем сам фреймворк mocha -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.3.1/mocha.min.js"
+            integrity="sha512-UxOiNUpamiMuXkcCcB3ShC9RImqyPIXRrzWZSMgltun4bJdwJ5tSRRrGx9SkH9aKxbasXbdIlQmFh/wuxmEtBA=="
+            crossorigin="anonymous"></script>
+    <script>
+        // включаем режим тестирования в стиле BDD
+        mocha.setup('bdd');
+    </script>
+    <!-- добавим chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.3/chai.min.js"
+            integrity="sha512-UWOMmD4SseIGi/zIKtdGwk86isKFNi2OgFDM1L6YMirI2FH6F1ZDAoXCHlIzMeuLOVM2nENcvYXW+SZTQJAJfQ=="
+            crossorigin="anonymous"></script>
+    <script>
+        // chai предоставляет большое количество функций. Объявим assert глобально
+        let assert = chai.assert;
+    </script>
 
 </head>
 
